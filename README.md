@@ -9,8 +9,8 @@
 ## Estado del código
 Proyecto | GitHub - CI | Sonarcloud
 -- | -- | --
-Front-end-angular | [![Angular - Build](https://github.com/miw-upm/betca-tpv-user/workflows/Spring%20User%20-%20Tests/badge.svg)](https://github.com/crismartin/biblio-angular/actions) | [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=crismartin_biblio-angular&metric=alert_status)](https://sonarcloud.io/dashboard?id=crismartin_biblio-angular)
-Back-end-core | [![Spring Core - Tests](https://github.com/miw-upm/betca-tpv-core/workflows/Spring%20Core%20-%20Tests/badge.svg)](https://github.com/crismartin/biblio-core/actions) | [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=crismartin_biblio-core&metric=alert_status)](https://sonarcloud.io/dashboard?id=crismartin_biblio-core)
+Front-end-angular | [![Angular - Build](https://github.com/miw-upm/betca-tpv-user/workflows/Spring%20User%20-%20Tests/badge.svg)](https://github.com/crismartin/biblio-angular/actions) | [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=crismartin_biblio-angular&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=crismartin_biblio-angular&branch=develop)
+Back-end-core | [![Spring Core - Tests](https://github.com/miw-upm/betca-tpv-core/workflows/Spring%20Core%20-%20Tests/badge.svg)](https://github.com/crismartin/biblio-core/actions) | [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=crismartin_biblio-core&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=crismartin_biblio-core&branch=develop)
 
 
 ## :octocat: Repositorios

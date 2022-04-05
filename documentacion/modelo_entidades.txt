@@ -1,0 +1,54 @@
+@startuml
+
+title Modelo Entidades
+
+class Libro {
+  id: String,
+  isbn: String,
+  titulo: String,
+  fechaPublicacion: LocalDate,
+  resumen: String
+}
+
+class Categoria {
+  id: String,
+  nombre:String
+}
+
+class Autor {
+  id: String,
+  nombre: String
+}
+
+class Usuario {
+  id: String,
+  nombres: String,
+  primerApellido: String,
+  segundoApellido: String,
+  identificacion: String,
+  nick: String
+}
+
+class Ejemplar {
+  id: String,
+  numeroCopia: String
+}
+
+class Prestamo {
+  id: String,
+  fechaDevolucion: LocalDate
+}
+
+class Editorial {
+  id: String,
+  nombre: String
+}
+
+Libro "N" *--> "N" Autor
+Libro "1" *--> "N" Ejemplar
+Libro "1" *--> "N" Categoria
+Libro "N" *--> Editorial
+Prestamo "N" *--> "1" Usuario
+Prestamo  *-->  Ejemplar
+
+@enduml

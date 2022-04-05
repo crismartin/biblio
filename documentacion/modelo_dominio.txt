@@ -1,0 +1,20 @@
+@startuml
+
+title Biblio App
+
+class Libro
+class Categoria
+class Autor
+class Usuario
+class Ejemplar
+class Prestamo
+class Editorial
+
+Libro "N" *--> "N" Autor
+Libro "1" *--> "N" Ejemplar
+Libro "1" *--> "N" Categoria
+Libro "N" *--> Editorial
+Prestamo "N" *--> "1" Usuario
+Prestamo  *-->  Ejemplar
+
+@enduml

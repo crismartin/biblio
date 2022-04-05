@@ -1,0 +1,37 @@
+@startuml
+title Diagrama estados Prestamo
+
+[*] --> Estado1
+Estado1: "Sistema pide identificador de usuario"
+
+Estado1 --> Estado2
+Estado2: "Usuario introduce su identificador"
+
+state "¿Existe Usuario?" as CondExisteUsuario
+Estado2 --> CondExisteUsuario
+
+CondExisteUsuario --> Estado3 : "SI"
+Estado3: "Sistema pide identificador del libro"
+CondExisteUsuario --> Estado2_No : "NO"
+
+Estado2_No: "Sistema informa al usuario de identificador no valido"
+Estado2_No --> Estado1
+
+Estado3 --> Estado4
+Estado4: "Usuario introduce identificador del libro"
+
+state "¿Existe libro y ejemplar disponible?" as ExisteEjemplar
+Estado4 --> ExisteEjemplar
+
+ExisteEjemplar --> Estado5: "SI"
+Estado5: "Sistema informa de prestamo con 30 dias de vigencia"
+ExisteEjemplar --> Estado4_No : "NO"
+
+Estado4_No: "Sistema informa de identificador de libro no valido o no disponible"
+Estado4_No --> Estado3
+
+Estado5 --> Estado3 : "Usuario desea hacer otro prestamo"
+
+Estado5 --> [*] : "Usuario no desea otro prestamo"
+
+@enduml

@@ -1,0 +1,83 @@
+
+MVP Biblio App
+
+Las funcionalidades que debe cumplir la aplicación son las siguientes:
+
+- Alta de usuario
+- Alta de un libro
+- Búsqueda de un libro
+- Proximas devoluciones
+- Préstamo de libros
+
+
+-------------------
+Alta de un usuario.
+-------------------
+
+El sistema permitirá crear un usuario asociado a una biblioteca. 
+Los datos necesarios para dar de alta al usuario serán los siguientes:
+- Nombres y Apellidos
+- Identificación: La identificación podrá ser adaptada al documento local
+- Fecha de nacimiento: en formato dd/mm/yyyy
+- Nick: El nick será único en toda la aplicación
+
+como datos opcionales serán los siguientes: 
+- Teléfono: Formato para telefono movil
+- Email: el email debe tener un formato valido
+
+Una vez registrados los datos, se procederá a emitir una credencial con un identificador único para cada usuario.
+
+
+-----------------
+Alta de un libro.
+-----------------
+
+El sistema permitirá registar un libro a la biblioteca.
+Los datos necesarios para dar de alta serán los siguientes:
+- ISBN
+- Titulo
+- Fecha publicación
+- Resumen
+- Numero de copias disponibles
+- Autor
+- Categoria
+- Editorial
+
+
+---------------------
+Búsqueda de un libro.
+---------------------
+
+El sistema permitirá realizar la búsqueda de un libro, mostrando los resultados de los libros 
+encontrados según los criterios de búsqueda introducidos.
+Los campos a mostrar por cada uno de los resultados serán los siguientes: 
+- Titulo
+- Autor
+- Edicion
+- Fecha publicación
+- Resumen
+
+
+----------------------
+Próximas devoluciones.
+----------------------
+
+El sistema permitirá mostrar las devoluciones de libros próximas a realizarse a 5 días de entrega o menos.
+Los campos a mostrar para cada uno de los resultados serán los siguientes:
+- Título del libro
+- Nombre del usuario
+- Fecha de devolución
+- Días restantes
+
+
+-------------------
+Préstamo de libros.
+-------------------
+
+El sistema permitirá registar préstamo de libros a un usuario. 
+En una misma visita, el usuario podrá llevarse hasta X libros. Solamente podrá hacerlo siempre que no se haya 
+llevado los X libros anteriormente, en tal caso, si se ha llevado previamente N libros, podrá llevarse solo X-N libros
+en un siguiente proceso.
+
+La lectura de la credencial del usuario se podrá hacer mediante un escaner de codigo barras o de manera manual por teclado
+
